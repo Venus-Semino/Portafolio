@@ -1,4 +1,33 @@
-/* Centrado del contenido en la primera pantalla */
+/* bienvenida/fondo */
+#seccion-bienvenida {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/medraw/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/*  del dibujo */
+.contenedor-dibujo {
+    position: absolute;
+    left: 8%;
+    bottom: 10%;
+    z-index: 2;
+}
+
+.dibujo-me {
+    max-height: 65vh;
+    width: auto;
+    display: block;
+    filter: drop-shadow(4px 6px 12px rgba(0, 0, 0, 0.3)); 
+}
+
 .contenedor-central {
     display: flex;
     flex-direction: column;
@@ -7,9 +36,7 @@
     height: 100vh;
 }
 
-/* =========================================
-   EFECTO COLLAGE ("BIENVENIDO")
-   ========================================= */
+
 .letras-collage {
     display: flex;
     gap: 5px;
@@ -36,24 +63,23 @@
 .r3:hover { background-color: #fff; color: #b39ddb; transform: rotate(2deg) scale(1.1); }
 
 .papelito {
-    background-color: #fcf9f2; /* Color hueso/papel */
+    background-color: #fcf9f2; 
     color: #333;
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     padding: 10px 30px;
     transform: rotate(4deg);
-    box-shadow: 3px 4px 6px rgba(0,0,0,0.15); /* Sombra para dar volumen */
+    box-shadow: 3px 4px 6px rgba(0,0,0,0.15); 
     margin-bottom: 20px;
     border: 1px solid #e0e0e0;
 }
 
 
 .lettering-brillante {
-    font-family: 'Dancing Script', cursive; /* Tipografía cursiva */
+    font-family: 'Dancing Script', cursive; 
     font-size: 5rem;
-    color: #fff; /* Texto blanco */
+    color: #fff; 
     margin: 0;
-    /* Aquí creamos el brillo lila alrededor de la letra */
     text-shadow: 
         0 0 10px #776696, 
         0 0 20px #b39ddb, 
