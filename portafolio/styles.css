@@ -1,1 +1,61 @@
- 
+/* Centrado del contenido en la primera pantalla */
+.contenedor-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* =========================================
+   EFECTO COLLAGE ("BIENVENIDO")
+   ========================================= */
+.letras-collage {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.recorte {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.r1 { background-color: #111; color: #fff; transform: rotate(-5deg); }
+.r2 { background-color: #e0e0e0; color: #111; transform: rotate(3deg); }
+.r3 { background-color: #b39ddb; color: #111; transform: rotate(-2deg); }
+
+.r1:hover { background-color: #fff; color: #111; transform: rotate(5deg) scale(1.1); }
+.r2:hover { background-color: #111; color: #fff; transform: rotate(-3deg) scale(1.1); }
+.r3:hover { background-color: #fff; color: #b39ddb; transform: rotate(2deg) scale(1.1); }
+
+.papelito {
+    background-color: #fcf9f2; /* Color hueso/papel */
+    color: #333;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    transform: rotate(4deg);
+    box-shadow: 3px 4px 6px rgba(0,0,0,0.15); /* Sombra para dar volumen */
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+
+.lettering-brillante {
+    font-family: 'Dancing Script', cursive; /* Tipografía cursiva */
+    font-size: 5rem;
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    /* Aquí creamos el brillo lila alrededor de la letra */
+    text-shadow: 
+        0 0 10px #776696, 
+        0 0 20px #b39ddb, 
+        0 0 40px #9575cd; 
+}
