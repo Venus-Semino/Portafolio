@@ -1,41 +1,50 @@
-/* bienvenida/fondo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #seccion-bienvenida {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('assets/background.jpg');
+    background-image: url('assets/background.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; 
+    padding: 0 5%; 
     overflow: hidden;
 }
 
-/*  del dibujo */
 .contenedor-dibujo {
-    position: absolute;
-    left: 8%;
-    bottom: 10%;
+    flex: 0 0 35%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 2;
 }
 
 .dibujo-me {
-    max-height: 65vh;
+    max-height: 75vh; 
     width: auto;
+    max-width: 100%;
     display: block;
     filter: drop-shadow(4px 6px 12px rgba(0, 0, 0, 0.3)); 
 }
 
 .contenedor-central {
+    flex: 0 0 65%; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    z-index: 2;
 }
-
 
 .letras-collage {
     display: flex;
