@@ -21,7 +21,7 @@
 }
 
 .contenedor-dibujo {
-    flex: 0 0 35%; 
+    flex: 0 0 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@
 }
 
 .dibujo-me {
-    max-height: 75vh; 
+    max-height: 90vh; 
     width: auto;
     max-width: 100%;
     display: block;
